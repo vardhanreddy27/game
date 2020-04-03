@@ -9,6 +9,11 @@ canvas {
     position: absolute;
     margin-top: 50px;
 }
+.hi{
+
+    height: 202px;
+    width: 202px;
+}
 </style>
 </head><h1>JANU score<a href=""> 115578</h1></a><br><br><br><br>
 <body onload="startGame()">
@@ -28,7 +33,7 @@ function startGame() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 300;
+        this.canvas.width = 480;
         this.canvas.height = 270;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
@@ -143,7 +148,7 @@ function accelerate(n) {
 
 
 
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+<button class="hi" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
 </pre>
 </body>
 </html>
