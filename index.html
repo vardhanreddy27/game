@@ -6,11 +6,11 @@
 canvas {
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
-   
+    position: absolute;
+    margin-top: 50px;
 }
-
 </style>
-</head>
+</head><h1>JANU score<a href=""> 115578</h1></a><br><br><br><br>
 <body onload="startGame()">
 <script>
 
@@ -21,7 +21,7 @@ var myScore;
 function startGame() {
     myGamePiece = new component(30, 30, "red", 10, 120);
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 80, 40, "text");
+    myScore = new component("30px", "Consolas", "black", 20, 40, "text");
     myGameArea.start();
 }
 
@@ -29,7 +29,7 @@ var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
         this.canvas.width = 480;
-        this.canvas.height = 470;
+        this.canvas.height = 270;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
@@ -133,8 +133,17 @@ function accelerate(n) {
     myGamePiece.gravity = n;
 }
 </script>
-<br>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">move</button>
+<br><br><br><pre>
 
+
+
+
+
+
+
+
+
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+</pre>
 </body>
 </html>
